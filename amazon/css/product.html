@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                    <a href="index.html" onchange="handleNavigation(this)">
+                        <img src="./assets/amazon_logo.png" alt="amazon logo">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-address border" >
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option selected disabled hidden> All</option>
+                    <option>All Departments</option>
+                    <option>Arts & Crafts</option>
+                    <option>Automotive</option>
+                    <option>Baby</option>
+                    <option>Beauty & Personal Care</option>
+                    <option>Books</option>
+                    <option>Boys' Fashion</option>
+                    <option>Computers</option>
+                    <option>Deals</option>
+                    <option>Diigital Music</option>
+                    <option>Electronics</option>
+                    <option>Girls' Fashion</option>
+                    <option>Health & Kitchen</option>
+                    <option>Industrial & Scientific</option>
+                    <option>Kindle Store</option>
+                    <option>Luggage</option>
+                    <option>Mens' Fashion</option>
+                    <option>Movies & TV</option>
+                    <option>Music, CDs & Vinyl</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="language-container">
+                <div class="lauguge-image">
+                    <img src="./assets/flag.jpg" alt="Language Flag">
+                </div>
+                <select class="lan border">
+                    <option>EN</option>
+                </select>
+            </div>
+            <div class="signin border">
+                <p class="sign">Hello, sign in</p>
+                <select class="account" onchange="handleNavigation(this)">
+                    <option disabled selected>Account & Lists</option> <!-- Placeholder option -->
+                    <option value="signin.html">Sign in</option>
+                    <option value="signup.html">Sign Up</option>
+                    <option value="your_orders.html">Your Orders</option>
+                    <option value="prime_membership.html">Your Prime Membership</option>
+                    <option value="account_settings.html">Account Settings</option>
+                    <option value="help.html">Help</option>
+                </select>
+            </div>
+            <div class="ro border">
+                <p class="r">Returns</p>
+                <p class="o">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+        </div>
+    </header>
+
+    <p class="breadcrum">Video Games > PC > Accessories > Headset </p>
+    <div class="product-display">
+        <div class="product-d-image">
+            <div class="product-icons">
+                <img src="./assets/product-image.jpg" alt="" width="60">
+                <img src="./assets/product-image.jpg" alt="" width="60">
+                <img src="./assets/product-image.jpg" alt="" width="60">
+                <img src="./assets/product-image.jpg" alt="" width="60">
+                <img src="./assets/product-image.jpg" alt="" width="60">
+            </div>
+            <div class="product-main-image">
+                <img src="./assets/product-image.jpg" alt="" width="400">
+            </div>
+        </div>
+        <div class="product-d-details">
+            <p class="product-title">
+                Anker iPhone 16 Charger, USB C Charger Block, 2-Pack 20W Fast Wall Charger for 16/16 Pro/Pro Max / iPad Pro and More, with 2 Pack 5 ft USB-C Cable
+            </p>
+            <p class="brand-store">Visit the Anker Store</p>
+            <div class="product-rating">
+                <div>
+                    <div> <img src="./assets/rating.png" height="20px"></div>
+                    <p>6,142 ratings | Search this page</p>
+                </div>
+                <p><span>#1 Best Seller</span> in Chargers</p>
+                <h5>10K+ bought in past month</h5>
+                <hr>
+            </div>
+            <div class="product-d-price">
+                <div>
+                    <p>-35%</p>
+                    <h1>$<span>12</span>.59</h1>
+                </div>
+                <h5>List Price: <span>$15.99</span></h5>
+                <p>Get <b>Fast, Free Shipping</b> with<span>Amazon Prime</span></p>
+                <p><span>FREE Returns</span></p>
+                <p><span>Join Prime to buy this item at $10.39</span></p>
+                <p>Available at a lower price from <span>other sellers</span> that may not offer free Prime shipping.</p>
+            </div>
+
+            <div class="product-color-selection">
+                <p>Color: <b>Black</b></p>
+                <div class="product-color-options">
+                    <div class="option">
+                        <img src="./assets/product-image.jpg" alt="" width="30px">
+                        <p>Black</p>
+                    </div>
+                    <div class="option">
+                        <img src="./assets/product-image-white.jpg" alt="" width="30px">
+                        <p>White</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <p><b>Brand</b></p> <p>Anker</p>
+                <p><b>Connectivity Technology</b></p> <p>USB</p>
+                <p><b>Connector Type</b></p> <p>USB Type C</p>
+                <p><b>Compatible Devices</b></p> <p>Other Devices: AirPods Pro / 3 Nintendo Switch, Tablets: iPad Pro 11", iPad Pro 12.9", iPad mini 5 / 6, iPad Air 4</p>
+                <p><b>Compatible Phone Models</b></p> <p>Galaxy S23 / S23+ / S23 Ultra / S22 / S22+ / S22 Ultra / S21 / S21+ / S21 Ultra / Google Pixel 6 / 7 Series, iPhone 16 / 16 Pro / 16 Pro Max / 16 Plus / 15 Series</p>
+                <p><b>Included Components</b></p> <p>2-Pack 5 ft Cable, 2-Pack 20W Charger</p>
+                <p><b>Special Feature</b></p> <p>Fast Charging</p>
+                <p><b>Color</b></p> <p>Black</p>
+                <p><b>Input Voltage</b></p> <p>100 Volts</p>
+                <p><b>Mounting Type</b></p> <p>Wall Mount</p>
+            </div>
+            <hr>
+            <div class="product-description">
+                <h1>About this item</h1>
+                <ul>
+                    <li>
+                        20W High-Speed Charging: Enjoy fast charging with 20W max output for your iPhone, Samsung phones, and other devices.
+                    </li>
+                    <li>Simultaneous Dual-Port Charging: With the ability to use USB-C and USB-A ports simultaneously, power two devices at once without compromising speed or performance.
+                    </li>
+                    <li>Small and Compact: Designed with portability in mind, take the compact charger with you wherever you go, ensuring that you never run out of power when you need it the most.
+                    </li>
+                    <li>Safety First: Rest easy knowing that Anker's MultiProtect safety system offers comprehensive protection for your devices, giving you peace of mind while charging.
+                    </li>
+                    <li>What You Get: 2-Pack Anker Charger (2-Port, 20W), 2-Pack 5 ft USB-C Cable, welcome guide, 18-month warranty, and our friendly customer service.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-d-purchase">
+            <div class="title">
+                <h3>Buy new:</h3><img src="./assets/circle-image.jpg" alt="" width="20px">
+            </div>
+            <h1 class="price">$<span>12</span>.59</h1>
+            <div class="gap">
+                <p>Get <b>Fast, Free Shipping</b> with <span>Amazon Prime</span></p>
+                <p><span>FREE Returns</span></p>
+            </div>
+            <div class="gap">
+                <p><span>Free Delivery</span> <b>Saturday</b>,</p>
+                <p><b>December 1</b> on orders shipped by Amazon over $35</p>
+            </div>
+            <div class="gap">
+                <p>Or fastest delivery <b>Tomorrow</b>, <b>November 28</b>. Order within <span>10 hrs 56 mins</span></p>
+            </div>
+            <div class="delivery-location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p><span>Deliver to India</span></p>
+            </div>
+            <h2 class="product-stock">In Stock</h2>
+            <select class="product-quantity">
+                <option value="1">Quantity: 1</option>
+                <option value="2">Quantity: 2</option>
+                <option value="3">Quantity: 3</option>
+            </select>
+
+            <a href="cart.html"><button class="btn">Add to Cart</button></a>
+            <button class="btn product-buy">Buy Now</button>
+
+            <div class="product-seller-info">
+                <p>Ships from</p> <p><span>Amazon</span></p>
+                <p>Sold by</p> <p><span>Anker</span></p>
+                <p>Returns</p> <p><span>Eligible for Returns, Refund or Replacement within 30 days of delivery</span></p>
+                <p>Payment</p> <p><span>Secure Transaction</span></p>
+            </div>
+            <hr>
+            <button class="product-add-list">Add to List</button>
+        </div>
+    </div>
+
+    <div class = "products-slider">
+        <h2>More Products you might like</h2>
+        <div class="products">
+            <img src = "./assets/product-1.jpg" alt="">
+            <img src = "./assets/product-2.jpg" alt="">
+            <img src = "./assets/product-3.jpg" alt="">
+            <img src = "./assets/product-4.jpg" alt="">
+            <img src = "./assets/product-5.jpg" alt="">
+            <img src = "./assets/product-6.jpg" alt="">
+            <img src = "./assets/product-7.jpg" alt="">
+            <img src = "./assets/product-8.jpg" alt="">
+            <img src = "./assets/product-9.jpg" alt="">
+            <img src = "./assets/product-10.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="foot-panel" onclick="scrollToTop()" style="cursor: pointer;">
+            Back to Top
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>      
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a> Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a> See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a> Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+           </ul>
+           <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Help</a>
+           </ul>
+        </div>
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+     </footer>
+    <script src="script.js"></script>
+    </body>
+    </html>
